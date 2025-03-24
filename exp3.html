@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="icon" href="imagesfrontpage/vfavicon1.png">
+    <title>
+        Experiment 3
+    </title>
+<style>
+#calculator{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+  color: white;
+}
+
+#display{
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+.calcbutton{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color:  white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calcbutton:hover{
+  background-color: hsl(0, 0%, 40%);
+}
+
+.calcbutton:active{
+  background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+  background-color:  rgb(92, 107, 192);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  color:  white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.operator-btn:hover{
+  background-color: hsl(231, 52%, 40%);
+}
+
+.operator-btn:active{
+  background-color: hsl(231, 70%, 75%);
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="logo">VLABs</p>
+    <img class="kjlogo" src="imagesfrontpage/kjsieit-logo.svg" alt="KJSIEIT Logo">
+    <div class="nav">
+        <div class="homeddown">
+            <button class="home">Home</button>
+            <div class="homeddowncontent">
+                <a rel="noopener" href="experiments.html" target="_blank">Experiments</a>
+                <a rel="noopener" href="theory.html" target="_blank">Theory</a>
+                <a rel="noopener" href="tests.html" target="_blank">Test Yourself</a>
+            </div>
+        </div>
+        <a class="contact" rel="noopener" href="contactus1.html">Contact Us</a>
+    </div>
+</div>
+    <div>
+        <p class="expheading">Experiment 3</p>
+        <p class="expaim">Study of Switch case</p>
+    </div>
+    <div class="container">
+        <div>
+        <button onclick="showSection('section1')" class="theo">Theory</button>
+        </div>
+        <div>
+        <button onclick="showSection('section2')" class="simulation">Simulation</button>
+        </div>
+        <div>
+        <button onclick="showSection('section3')" class="posttest">Posttest</button>
+        </div>
+    </div>
+    <main id="content">
+        <div id="section1">
+            <p class="the">The Switch Statement</p>
+            <p class="thekainfo">
+                A <b>switch</b> statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each <b>Switch</b> case.<br><br>
+                <b>Syntax:</b><br><br>
+                <i>switch</i>(expression)<br>
+                {<br>
+                    case value1: statement_1;<br>
+                    <i>break</i>;<br>
+                    case value2: statement_2;<br>
+                    <i>break;</i><br>
+                 .<br>
+                 .<br>
+                 .<br>
+                 case value_n: statement_n;<br>
+                 <i>break;</i><br>
+                 <i>default:</i> default_statement;<br>
+                }<br><br>
+                The following rules apply to a <b>switch</b> statement:<br><br>
+                ● The expression used in a <b>switch</b> statement must have an integral or enumerated type, or be of a class type in which the class has a single conversion function to an integral or enumerated type.<br>
+                ● You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.<br>
+                ● The <b>constant-expression</b> for a case must be the same data type as the variable in the switch, and it must be a constant or a literal.<br>
+                ● When the variable being switched on is equal to a case, the statements following that case will execute until a <b>break</b> statement is reached.<br>
+                ● When a <b>break</b> statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.<br>
+                ● Not every case needs to contain a <b>break</b>. If no <b>break</b> appears, the flow of control will fall through to subsequent cases until a break is reached.<br>
+                ● A <b>switch</b> statement can have an optional <b>default</b> case, which must appear at the end of the switch. The <b>default</b> case can be used for performing a task when none of the cases is true. No <b>break</b> is needed in the default case.<br>
+            </p>
+        </div>
+        <div id="section2" style="display: none;">
+            <p class="the">Program to create your own Calculator</p>
+            <div class="thekainfo">
+                <div id="codeChallenge">
+                        <br>int main() {<br>
+                          char op;<br>
+                          double first, second;<br> 
+                          printf("Enter an operator (+,-, *, /): ");<br>
+                          scanf("%c", &op);<br>
+                          printf("Enter two operands: ");<br>
+                          scanf("%lf %lf", &first, &second);<br><br>
+                          <label for="switch"></label><input type="text" id="switch" name="switch"> (op) {<br><br>
+                            case '+':<br>
+                              printf("%.1lf + %.1lf = %.1lf", first, second, first + second);<br>
+                              break;<br>
+                            case '-':<br>
+                              printf("%.1lf - %.1lf = %.1lf", first, second, first - second);<br>
+                              <label for="minus"></label><input type="text" id="minus" name="minus"><br>
+                            case '*':<br> 
+                              printf("%.1lf * %.1lf = %.1lf", first, second, first * second);<br> 
+                              <label for="multiply"></label><input type="text" id="multiply" name="multiply"><br>
+                            case '/':<br> 
+                              printf("%.1lf / %.1lf = %.1lf", first, second, first / second);<br> 
+                              break;<br>
+                              <label for="divide"></label><input type="text" id="divide" name="divide"><br>
+                              printf("Error! operator is not correct");<br>
+                          }<br>
+                          return 0;<br>
+                        }<br>
+                    <button type="button" id="button" class="subbutton" onclick="checkAnswers()">Submit</button><br><br>
+                  </div>
+                  <div id="calculator" style="display:none;">
+                    <input id="display" readonly>
+                    <div id="keys">
+                      <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                      <button class="calcbutton" onclick="appendToDisplay('7')">7</button>
+                      <button class="calcbutton" onclick="appendToDisplay('8')">8</button>
+                      <button class="calcbutton" onclick="appendToDisplay('9')">9</button>
+                      <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                      <button class="calcbutton" onclick="appendToDisplay('4')">4</button>
+                      <button class="calcbutton" onclick="appendToDisplay('5')">5</button>
+                      <button class="calcbutton" onclick="appendToDisplay('6')">6</button>
+                      <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+                      <button class="calcbutton" onclick="appendToDisplay('1')">1</button>
+                      <button class="calcbutton" onclick="appendToDisplay('2')">2</button>
+                      <button class="calcbutton" onclick="appendToDisplay('3')">3</button>
+                      <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+                      <button class="calcbutton" onclick="appendToDisplay('0')">0</button>
+                      <button class="calcbutton" onclick="appendToDisplay('.')">.</button>
+                      <button class="calcbutton" onclick="calculate()">=</button>
+                      <button onclick="clearDisplay()" class="operator-btn">C</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div id="section3" style="display: none;">
+            <p class="the">Are you ready to take the Test?</p>
+            <p class="thekainfo">
+              <b>Hope you had fun learning about this experiment in C programming.<br>
+                Lets test how much you've learned:</b><br><br><br><br><br><br><br><br><br>
+                Click on this button to attempt the test:
+                <button class="ready"><a class="getready" href="exp3 posttest-20241017T050524Z-001/exp3 posttest/quiz.html">Are you ready?</a></button>
+            </p>
+        </div>
+    </main>
+    <div class="footer">
+      <img class="trust" src="imagesfrontpage/trust.png">
+      <p class="footerinfo">Department of Computer Engineering<br>
+      Guided by: Dr. Vijaya Sagvekar<br>
+      Developed by: Tanishq Chaudhari,Maharshi Jethva,Devesh Kichak
+      </p>
+      <img class="trust" src="imagesfrontpage/svv.png">
+  </div>
+<script src="exp3.js"></script>
+<script src="change.js"></script>
+</body>
+</html>

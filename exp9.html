@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="icon" href="imagesfrontpage/vfavicon1.png">
+    <title>
+        Experiment 9
+    </title>
+</head>
+<body>
+    <div class="header">
+        <p class="logo">VLABs</p>
+        <img class="kjlogo" src="imagesfrontpage/kjsieit-logo.svg" alt="KJSIEIT Logo">
+        <div class="nav">
+            <div class="homeddown">
+                <button class="home">Home</button>
+                <div class="homeddowncontent">
+                    <a rel="noopener" href="experiments.html" target="_blank">Experiments</a>
+                    <a rel="noopener" href="theory.html" target="_blank">Theory</a>
+                    <a rel="noopener" href="tests.html" target="_blank">Test Yourself</a>
+                </div>
+            </div>
+            <a class="contact" rel="noopener" href="contactus1.html">Contact Us</a>
+        </div>
+    </div>
+    <div>
+        <p class="expheading">Experiment 9</p>
+        <p class="expaim">Study of character array</p>
+    </div>
+    <div class="container">
+        <div>
+        <button onclick="showSection('section1')" class="theo">Theory</button>
+        </div>
+        <div>
+        <button onclick="showSection('section2')" class="simulation">Simulation</button>
+        </div>
+        <div>
+        <button onclick="showSection('section3')" class="posttest">Posttest</button>
+        </div>
+    </div>
+    <main id="content">
+        <div id="section1">
+            <p class="the">Array of Characters</p>
+            <p class="thekainfo">
+                In a <b>String</b> constant , such as "I am a string" the string is marked with a special character, the <i>null</i> character, which is simply the character with the value 0. (The null character has no relation except in name to the <i>null pointer</i>. In the ASCII character set, the null character is named NUL.) The null or string- terminating character is represented by another character escape sequence, \0.<br>
+                String constants are often used in making the output of code intelligible using printf ; printf("Hello, world\n");<br>
+                printf("The value of a is: %f\n", a);<br>
+                String constants can be associated with variables. C provides the char type variable, which can contain one character--1 byte--at a time. A character string is stored in an array of character type, one ASCII character per location. Never forget that, since strings are conventionally terminated by the null character ``\0'', we require <i>one extra storage location</i> in the array!<br><br>
+                C does not provide any operator which manipulate entire strings at once. Strings are manipulated either via pointers or via special routines available from the standard string library string.h. Using character pointers is relatively easy since the name of an array is a just a pointer to its first element.<br>
+                Strings in C are represented by arrays of characters. The end of the string is marked with a special character, the null character, which is simply the character with the value 0. (The null character has no relation except in name to the null pointer. In the ASCII character set, the null character is named NUL.) The null or string-terminating character is represented by another character escape sequence, \0.<br>
+                Because C has no built-in facilities for manipulating entire arrays (copying them, comparing them, etc.), it also has very few built-in facilities for manipulating strings.<br>
+                In fact, C's only truly built-in string-handling is that it allows us to use string constants (also called string literals) in our code. Whenever we write a string, enclosed in double quotes, C automatically creates an array of characters for us, containing that string, terminated by the \0 character. For example, we can declare and define an array of characters, and initialize it with a string constant:<br>
+                char string[] = "Hello, world!";<br><br>
+                <b>Algorithm</b><br><br>
+                Step 1: Start<br>
+                Step 2: Declare i, j, str[], strRev[]<br>
+                Step 3: for(i=0;str[i]!='\0';i++)<br>
+                i--;<br>
+                for(j=0;i>=0;i--,j++)<br>
+                strRev[j]=str[i]; strRev[j]='\0'; bool flag=true;<br>
+                for(int i=0;str[i]!='\0';i++)<br>
+                if(str[i]!=strRev[i])<br>
+                flag=false;<br>
+                Break the Loop<br>
+                Initializing strRev as a null string Print Enter a string:<br>
+                Take string input from the user Apply strReverse(str,strRev); print Reversed string:<br>
+                if string is Pallindrome then print strRev<br>
+                Step 4: display string is a pallindrome. else display string is not a pallindrome.<br>
+                Step 5: Stop<br>
+            </p>
+        </div>
+        <div id="section2" style="display: none;">
+            <p class="the">Program to check if a String is Palindrome or not</p>
+            <div class="thekainfo">
+                <form id="quiz">
+                        int main() {<br>
+                            char string1[20];<br>
+                            int i, length;<br>
+                            int <label for="flag"></label><input type="text" id="flag"> = 0;<br>
+                            // Prompt the user for input<br>
+                            printf("Enter a string: ");<br>
+                            scanf("%s", string1);<br>
+                            // Calculate the string length<br>
+                            length = <label for="strlen"></label><input type="text" id="strlen">(string1);<br>
+                            // Compare characters from the start and end of the string<br>
+                            // and stop if a mismatch is found or the middle of the string is reached.<br>
+                            <label for="for"></label><input type="text" id="for"> (i = 0; i < length / 2; i++) {<br>
+                            if (string1[i] != string1[length - i - 1]) {<br>
+                            flag = 1;<br>
+                            break;<br>
+                            }<br>
+                            }<br>
+                            // Output the result<br>
+                            <label for="if"></label><input type="text" id="if"> (flag) {<br>
+                            printf("%s is not a palindrome\n", string1);<br>
+                            } else {<br>
+                            printf("%s is a palindrome\n", string1);<br>
+                            }<br>
+                            return 0;<br>
+                            }<br>
+                            <button class="subbutton" type="button" id ="button" onclick="checkAnswers()">Submit</button><br>
+                </form>
+                    <div id="feedback"></div>
+                    <div class="contain" style="display: none;">
+                    <h1>Palindrome Checker</h1>
+                    <form id="palindromeForm">
+                        <label for="inputString">Enter a string:</label>
+                        <input type="text" id="inputString" required><br>
+                        <button class="subbutton" type="submit">Check</button>
+                    </form>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+        <div id="section3" style="display: none;">
+            <p class="the">Are you ready to take the Test?</p>
+            <p class="thekainfo">
+                <b>Hope you had fun learning about this experiment in C programming.<br>
+                    Lets test how much you've learned:</b><br><br><br><br><br><br><br><br><br>
+                    Click on this button to attempt the test:
+                    <button class="ready"><a class="getready" href="exp9 posttest-20241017T050725Z-001/exp9 posttest/quiz.html">Are you ready?</a></button>
+            </p>
+        </div>
+    </main>
+    <div class="footer">
+        <img class="trust" src="imagesfrontpage/trust.png">
+        <p class="footerinfo">Department of Computer Engineering<br>
+        Guided by: Dr. Vijaya Sagvekar<br>
+        Developed by: Tanishq Chaudhari,Maharshi Jethva,Devesh Kichak
+        </p>
+        <img class="trust" src="imagesfrontpage/svv.png">
+    </div>
+<script src="exp9.js"></script>
+<script src="change.js"></script>
+</body>
+</html>

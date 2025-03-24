@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exp.css">
+    <link rel="icon" href="imagesfrontpage/vfavicon1.png">
+    <title>
+        Experiment 7
+    </title>
+</head>
+<body>
+    <div class="header">
+        <p class="logo">VLABs</p>
+        <img class="kjlogo" src="imagesfrontpage/kjsieit-logo.svg" alt="KJSIEIT Logo">
+        <div class="nav">
+            <div class="homeddown">
+                <button class="home">Home</button>
+                <div class="homeddowncontent">
+                    <a rel="noopener" href="experiments.html" target="_blank">Experiments</a>
+                    <a rel="noopener" href="theory.html" target="_blank">Theory</a>
+                    <a rel="noopener" href="tests.html" target="_blank">Test Yourself</a>
+                </div>
+            </div>
+            <a class="contact" rel="noopener" href="contactus1.html">Contact Us</a>
+        </div>
+    </div>
+    <div>
+        <p class="expheading">Experiment 7</p>
+        <p class="expaim">Study of do-while loop</p>
+    </div>
+    <div class="container">
+        <div>
+        <button onclick="showSection('section1')" class="theo">Theory</button>
+        </div>
+        <div>
+        <button onclick="showSection('section2')" class="simulation">Simulation</button>
+        </div>
+        <div>
+        <button onclick="showSection('section3')" class="posttest">Posttest</button>
+        </div>
+    </div>
+    <main id="content">
+        <div id="section1">
+            <p class="the">Do-while loop</p>
+            <p class="thekainfo">
+                In most computer programming languages, a <b>Do-while</b> loop, sometimes just called a while loop, is a control flow statement that allows code to be executed once based on a given Boolean condition. Note though that unlike most languages, <b>FORTRAN's</b> do loop is actually the same as the for loop.<br>
+                The do while construct consists of a process symbol and a condition. First, the code within the block is executed, and then the condition is evaluated. If the condition is true the code within the block is executed again. This repeats until the condition becomes false. Because do while loops check the condition after the block is executed, the control structure is often also known as a post-test loop. Contrast with the while loop, which tests the condition before the code within the block is executed.<br>
+                It is possible, and in some cases desirable, for the condition to always evaluates to true, creating an infinite loop. When such a loop is created intentionally, there is usually another control structure (such as a break statement) that allows termination of the loop.<br><br>
+                <b>Algorithm:</b><br><br>
+                Step 1: initialize sum=0 and i=1<br>
+                Step 2: take input from user.<br>
+                Step 3: find the remainder after divide by 2.<br>
+                Step 4: get the new sum value.<br>
+                Step 5: get the quotient value after divide by 2.<br>
+                Step 6: continue this process for the condition no. is greater than 0.<br>
+        </div>
+        <div id="section2" style="display: none;">
+            <p class="the">Program to find binary equivalent of a given decimal number</p>
+            <div class="thekainfo">
+                    int main() {<br>
+                        int decimal, binary = 0, remainder, base = 1;<br>                   
+                        // Input: Asking the user for a decimal number<br>
+                        printf("Enter a decimal number: ");<br>
+                        scanf("%d", &decimal);<br>                  
+                        int num = <label for="decimal"></label><input type="text" id="decimal">; // Store the original number for output<br>                 
+                        // Process: Convert decimal to binary<br>
+                        <label for="while"></label><input type="text" id="while"> (num > 0) {<br>
+                            remainder = num % 2; // Get the remainder<br>
+                            binary = <label for="binary"></label><input type="text" id="binary"> + remainder * base; // Build the binary number<br>
+                            num = num / 2; // Divide by 2<br>
+                            base = base * 10; // Move to the next digit place<br>
+                        }<br>       
+                        // Output: Display the binary equivalent<br>
+                        printf("Binary equivalent of %d is %d\n", decimal, binary);<br>                  
+                        <label for="return"></label><input type="text" id="return"> 0;<br>
+                    }<br>
+                <button class="subbutton" type="button" id="button" onclick="checkAnswers()">Submit</button><br>
+                    </form>                
+                    <div id="feedback"></div>                
+                    <div class="contain" style="display: none;">
+                    <h1>Decimal to Binary Converter</h1>
+                    <label for="decimalInput">Enter a decimal number:</label><br>
+                    <input type="number" id="decimalInput" required><br>
+                    <button class="subbutton" id="convertButton">Convert</button>
+                    <div id="result"></div>
+            </div>
+        </div>
+        <div id="section3" style="display: none;">
+            <p class="the">Are you ready to take the Test?</p>
+            <p class="thekainfo">
+                <b>Hope you had fun learning about this experiment in C programming.<br>
+                    Lets test how much you've learned:</b><br><br><br><br><br><br><br><br><br>
+                    Click on this button to attempt the test:
+                    <button class="ready"><a class="getready" href="exp7 posttest-20241017T050717Z-001/exp7 posttest/quiz.html">Are you ready?</a></button>
+            </p>
+        </div>
+    </main>
+    <div class="footer">
+        <img class="trust" src="imagesfrontpage/trust.png">
+        <p class="footerinfo">Department of Computer Engineering<br>
+        Guided by: Dr. Vijaya Sagvekar<br>
+        Developed by: Tanishq Chaudhari,Maharshi Jethva,Devesh Kichak
+        </p>
+        <img class="trust" src="imagesfrontpage/svv.png">
+    </div>
+<script src="exp7.js"></script>
+<script src="change.js"></script>
+</body>
+</html>

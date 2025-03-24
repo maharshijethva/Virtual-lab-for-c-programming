@@ -1,0 +1,224 @@
+body{
+    background-color: #121212;
+    font-family: "Outfit", system-ui;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+.content{
+    display: none;
+}
+.content.visible{
+    display: block;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+    padding: 20px 60px;
+}
+.logo{
+    color: rgb(92, 107, 192);
+    font-size: 64px;
+    font-family: "Outfit", system-ui;
+    font-weight: bold;
+    margin: 0;
+}
+.logo:hover{
+    cursor: default;
+}
+.kjlogo {
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.home{
+    background-color: #121212;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    margin-right: 20px;
+}
+.homeddown {
+    position: relative;
+    margin-left: 30px;
+}
+.homeddowncontent {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.homeddowncontent a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.homeddowncontent a:hover{background-color: #121212;}
+.homeddown:hover .homeddowncontent {
+    display: block;
+}
+.home:hover{
+    color:rgb(92, 107, 192)
+}
+.contact{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.contact:hover {
+    color: rgb(92, 107, 192);
+}
+.clogo{
+    width: 483px;
+    height: 300px;
+    object-fit: scale-down;
+    margin-top: 20px;
+    margin-left: 1000px;
+}
+.clogo:hover{
+    cursor: none;
+}
+.boldinfo1{
+    color: white;
+    font-weight: bold;
+    width: 900px;
+    font-size: 48px;
+    margin-left: 72px;
+    margin-top: -200px;
+}
+.info1{
+    color: white;
+    width: 750px;
+    font-size: 20px;
+    margin-left: 72px;
+}
+.getstarted{
+    text-decoration: none;
+    color: white;
+}
+.start{
+    background-color: rgb(92,107,192);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 254px;
+    height: 67px;
+    margin-left: 630px;
+    margin-top: 110px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+.start:hover{
+    box-shadow: 0 0 15px 0 rgba(225, 253, 247, 0.75);
+    transform: translateY(-5px);
+}
+.w11{
+    width: 300px;
+    margin-top: 75px;
+    margin-left: 112px;
+    cursor: none;
+}
+.info2{
+    color: white;
+    font-weight: bold;
+    width: 800px;
+    font-size: 48px;
+    margin-left: 700px;
+    margin-top: -275px;
+}
+.info2ka1{
+    color: white;
+    width: 770px;
+    font-size: 20px;
+    margin-left: 700px
+}
+.info3{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 72px;
+    margin-top: 120px;
+}
+.info3ka1{
+    color: white;
+    font-size: 20px;
+    width: 550px;
+    margin-left: 72px;
+}
+.w12{
+    width: 300px;
+    margin-left: 960px;
+    margin-top: -560px;
+    cursor: none;
+}
+.w13{
+    width: 300px;
+    margin-left: 72px;
+    margin-top: 100px;
+    cursor: none;
+}
+.info4{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: -250px;
+}
+.info4ka1{
+    color: white;
+    font-size: 20px;
+    width: 850px;
+    margin-left: 500px;
+}
+#animation-iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000; /* Keep on top */
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.5s ease; /* Fade-out effect */
+    border: none;
+}
+ /* Hide iframe after fade */
+#animation-iframe.hidden {
+    opacity: 0; /* Fully transparent */
+    pointer-events: none; /* Disable interaction */
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    padding: 10px;
+    background-color: #333333;
+    max-height: 100px;
+}
+.footerinfo{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.trust{
+    width: 100px;
+    height: 100px;
+}

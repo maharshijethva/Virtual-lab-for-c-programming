@@ -1,0 +1,65 @@
+body{
+    background-color: #121212;
+    font-family: "Outfit", system-ui;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+.logo{
+    color: rgb(92,107,192);
+    font-size: 64px;
+    font-family: "Outfit", system-ui;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 59px;
+    margin-top: 28px;
+    margin-bottom: -50px;
+}
+.logo:hover{
+    cursor:default;
+}
+.home{
+    background-color: #121212;
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+}
+.homeddown{
+    position:relative;
+    display: inline-block;
+    margin-left: 1150px;
+}
+.homeddowncontent{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.homeddowncontent a{
+    color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.homeddowncontent a:hover {background-color: #121212;}
+.homeddown:hover .homeddowncontent {display: block;}
+.home:hover{
+    color: rgb(92,107,192);
+}
+.contact{
+    margin-left: -80px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 40px;
+}
+.contact:hover{
+    color: rgb(92,107,192);
+}

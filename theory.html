@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="theory.css">
+    <link rel="icon" href="imagesfrontpage/vfavicon1.png">
+    <title>
+        Theory
+    </title>
+</head>
+<body>
+    <div class="header">
+        <p class="logo">VLABs</p>
+        <img class="kjlogo" src="imagesfrontpage/kjsieit-logo.svg" alt="KJSIEIT Logo">
+        <div class="nav">
+            <div class="homeddown">
+                <button class="home">Home</button>
+                <div class="homeddowncontent">
+                    <a rel="noopener" href="experiments.html" target="_blank">Experiments</a>
+                    <a rel="noopener" href="tests.html" target="_blank">Test Yourself</a>
+                </div>
+            </div>
+            <a class="contact" rel="noopener" href="contactus1.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="introddown">
+        <button onclick="showSection('section1')" class="intro">&#9776; Introduction</button>
+        <div class="introddowncont">
+            <a href="#" onclick="showSection('section2')">&#9784; What is C?</a>
+            <a href="#" onclick="showSection('section3')">&#9784; Hello World</a>
+            <a href="#" onclick="showSection('section4')">&#9784; Comments,Tokens & Keywords</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; Variables</button>
+        <div class="introddowncont">
+            <a href="#" onclick="showSection('section5')">&#9784; What are variables?</a>
+            <a href="#" onclick="showSection('section6')">&#9784; Constants</a>
+            <a href="#" onclick="showSection('section7')">&#9784; Global Variables</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; Data Types</button>
+        <div class="introddowncont">
+            <a href="#" onclick="showSection('section8')">&#9784; Basic Data Types</a>
+            <a href="#" onclick="showSection('section9')">&#9784; Literal,Escape Sequence and Bool</a>
+            <a href="#" onclick="showSection('section10')">&#9784; Integer Promotions in C,Character Arithmetic in C,Type Conversion in C</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; Input/Output</button>
+        <div class="introddowncont">
+            <a href="#" onclick="showSection('section11')">&#9784; Format Specifiers in C</a>
+            <a href="#" onclick="showSection('section12')">&#9784; Formatted I/O Functions</a>
+            <a href="#" onclick="showSection('section13')">&#9784; Unformatted I/O Functions</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; Arrays</button>
+        <div class="introddowncont">
+            <a href="#" onclick="showSection('section14')">&#9784; Arrays</a>
+            <a href="#" onclick="showSection('section15')">&#9784; Properties of Array in C</a>
+            <a href="#" onclick="showSection('section16')">&#9784; Pass Array to Functions in C:</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; Pointers</button>
+        <div class="introddowncont">
+            <a href="#" onclick="showSection('section17')">&#9784; C Pointers:</a>
+            <a href="#" onclick="showSection('section18')">&#9784; Passing Pointers to Functions in C</a>
+            <a href="#" onclick="showSection('section19')">&#9784; Arguments Passing with pointers</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; Storage</button>
+        <div class="introddowncont">
+                <a href="#" onclick="showSection('section23')">&#9784; Storage Classes in C</a>
+                <a href="#" onclick="showSection('section24')">&#9784; Static Variables in C</a>
+        </div>
+        </div>
+        <div class="ddown2">
+        <button class="intro">&#9776; File</button>
+        <div class="introddowncont">
+                    <a href="#" onclick="showSection('section25')">&#9784; Basics of File Handling in C</a>
+                    <a href="#" onclick="showSection('section26')">&#9784; EOF, getc(),feof(),fgets() and gets() in C language</a>
+                    <a href="#" onclick="showSection('section27')">&#9784; C program to delete a file</a>
+        </div>
+        </div>
+    </div>
+        <main id="content">
+            <div id="section1">
+                <p class="the1">Theory</p>
+                <p class="the1kainfo">Lets learn the concepts of <b>C-programming</b>.</p>
+            </div>
+            <div id="section2" style="display: none;">
+                <p class="the2">What is C ?</p>
+                <p class="the2kainfo"><b>C</b> is a procedural programming language initially developed by <b>Dennis Ritchie</b> in the year <b>1972</b> at Bell Laboratories of AT&T Labs. It was mainly developed as a system programming language to write the <b>UNIX</b> operating system.<br>
+                    <br>
+                    <b>Why Should We Learn C?</b><br><br>
+                    Many later languages have borrowed syntax/features directly or indirectly from the C language like the syntax of Java, PHP, JavaScript, and many other languages that are mainly based on the C language. C++ is nearly a superset of C language (Only a few programs may compile in C, but not in C++).<br>
+                    So,  if a person learns C programming first, it will help them to learn any modern programming language as well. Also, learning C helps to understand a lot of the underlying architecture of the operating system like pointers, working with memory locations, etc.<br><br>
+                    <b>Your First C Program , Take a look! :</b><br><br>
+                        #include <i>&#0060;stdio.h&#0062;</i><br>
+                        int <b>main</b>() {<br>
+                        int a = 7;<br>
+                        printf("%d", a);<br>
+                            <b>return</b> 0;<br>
+                        }<br><br>
+                    <b>Output:</b><br>
+                    7                       
+                </p>
+            </div>
+            <div id="section3" style="display: none;">
+                <p class="the2">Hello world Program</p>
+                <p class="the2kainfo"><pre>
+        // Simple C program to display "Hello World"
+        // Main function: entry point for execution
+        int main() {
+        printf("Hello World");
+        return 0;
+        }
+                </pre></p>
+            </div>
+            <div id="section4" style="display: none;">
+                <p class="the2">Comments,Tokens & Keywords</p>
+                <p class="the2kainfo">
+                    Comments in C are human-readable notes that enhance code clarity without being executed by the <br>
+                    compiler.They are essential for documenting code and explaining complex logic. There are two <br>
+                    types of comments:<br>
+                    Single-Line Comments: Start with // and extend to the end of the line. They can be used before<br>
+                    <br> 
+                    or after code.Example:<br>
+                    // This prints a message<br>
+                    printf("Hello, World!"); // Message output<br>
+                    Multi-Line Comments: Begin with /* and end with */, allowing for longer explanations across multiple <br>
+                    lines.Example:<br>
+                    /* This is a multi-line comment<br>
+                       that spans several lines */<br>
+                    Using comments effectively improves code readability and helps others understand your work.<br>
+                    TOKENS:<br>
+                    Tokens in C are the smallest meaningful elements in a program, categorized into six types:<br>
+                    
+                    1. Keywords: Reserved words that perform specific functions (e.g., `int`, `return`).<br>
+                    2. Identifiers: User-defined names for variables and functions, must start with a letter or<br> 
+                    underscore.<br>
+                    3. Constants: Fixed values that cannot be modified (e.g., `const int x = 5`).<br>
+                    4. Strings: Arrays of characters ending with a null character, enclosed in double quotes.<br>
+                    5. Special Symbols: Characters with specific meanings (e.g., `;`, `{}`, `()`).<br>
+                    6. Operators: Symbols that perform operations on variables (e.g., arithmetic, logical).<br>
+                    KEYWORDS:<br>
+                    In C programming, keywords are reserved words with special meanings that cannot be used as<br> 
+                    identifiers.There are 32 keywords, including int, float, if, and while. They define the <br>
+                    syntax and functionality of the language. For example, auto defines local variables, break <br>
+                    terminates loops, and return sends values from functions. Understanding keywords is crucial <br>
+                    for writing syntactically correct and functional C programs,as they guide how code is structured<br> 
+                    and executed.</p>
+            </div>
+            <div id="section5" style="display: none;">
+                <p class="the2">What are Variables?</p>
+                <p class="the2kainfo">In C, a variable is a named memory location used to store data, enabling easy<br>
+                    access and manipulation. Variables are categorized by scope and storage class, including local, <br>
+                    global, static, automatic, extern, and register variables.<br>
+                    Declaration informs the compiler of the variable's name and type, while definition allocates <br>
+                    memory. Initialization assigns an initial value. For example, `int var = 10;` declares, defines,<br>
+                     and initializes a variable.<br>
+                    Variable names must start with a letter or underscore, contain no spaces, and cannot be<br> 
+                    keywords. Constant variables, defined with the `const` keyword, are immutable after initialization.<br> 
+                    Understanding these concepts is vital for effective programming in C.<br>
+                    </p>
+            </div>
+            <div id="section6" style="display: none;">
+                <p class="the2">Constants</p>
+                <p class="the2kainfo">In C, constants are read-only variables whose values cannot be modified after<br> 
+                    declaration. Defined using the `const` keyword, constants must be initialized at the time of <br>
+                    declaration.Common types include integer, character, floating-point, double precision, array, <br>
+                    and structure constants. <br>
+
+                    Constants differ from literals, which are fixed values themselves; for example, `const int c <br>
+                    = 20` is a constant, while `20` is a literal. Constants can have their address determined, whereas <br>
+                    literals cannot (except for string literals). <br>
+                    
+                    You can also define constants using the `#define` preprocessor directive, which creates macros replaced<br> 
+                    by their values before compilation. For instance, `#define PI 3.14` allows usage of `PI` as a constant <br>
+                    in the code. This method is widely used for defining constants in C programming.<br>
+                    </p>
+            </div>
+            <div id="section7" style="display: none;">
+                <p class="the2">Global Variables</p>
+                <p class="the2kainfo">In C, global variables are declared outside any function, making them accessible throughout the <br>
+                    program. For example, `int x = 5;` defines a global variable `x`. Unlike local variables, which are confined to <br>
+                    their functions, global variables can be modified and accessed by any function, retaining their values for the <br>
+                    program's duration.<br>
+
+                Advantages of global variables include their accessibility across functions and the need for only one declaration.<br> 
+                They are beneficial for sharing data among multiple functions. <br>
+                
+                However, they also have disadvantages: their values can be unintentionally changed, leading to potential errors, <br>
+                especially when many global variables are used. <br>
+                
+                In summary, while global variables can simplify data sharing in a program, they should be used cautiously 
+                to avoid complications and maintain code clarity.<br>
+                </p>
+            </div>
+            <div id="section8" style="display: none;">
+                <p class="the2">Data Types</p>
+                <p class="the2kainfo">In C, every variable has a specific data type, which dictates the kind of data it can store and <br>
+                    the amount of memory it requires. Data types are classified into three categories:<br>
+
+                    1. Primitive Data Types: These include basic types like `int`, `char`, `float`, and `double`. They represent <br>
+                    simple values.<br>
+                       
+                    2. Derived Data Types: These are created from primitive types, including arrays, pointers, and functions.<br>
+                    
+                    3. User-Defined Data Types: Users can define these types using structures, unions, and enums.<br>
+                    
+                    Each data type has specific ranges and sizes. For example, `int` typically occupies 4 bytes, while `char` takes<br>
+                    1 byte. The `sizeof()` operator can be used to check the size of any data type. Understanding these data types <br>
+                    is essential for efficient programming in C, influencing both memory usage and performance.<br>     
+            </div>
+            <div id="section9" style="display: none;">
+                <p class="the2">Literal,Escape Sequence and Bool</p>
+                <p class="the2kainfo">In C, literals are constant values assigned to variables, representing fixed data that cannot be <br>
+                    modified. They fall into four categories: integer, float, character, and string literals. <br>
+
+                    1. Integer Literals can be decimal, octal, hexadecimal, or binary, with prefixes indicating their base (e.g., `0x`<br>
+                     for hexadecimal). Suffixes (like `L` for long) specify the type.<br>
+                    
+                    2.Floating-Point Literals represent real numbers, expressed in decimal or exponential form.<br>
+                    
+                    3. Character Literals store single characters in single quotes, while String Literals can hold multiple characters <br>
+                    in double quotes.<br>
+                    
+                    Escape sequences (like `\n` for new lines) allow for special character representation within strings. <br>
+                    
+                    In C, boolean values are not built-in but can be implemented using `stdbool.h`, enumeration types, or preprocessor<br> 
+                    definitions. Boolean values are essential in conditional statements, loops, and function return types.<br>
+                    </p></div>
+            <div id="section10" style="display: none;">
+                <p class="the2">Integer Promotions in C,<br>Character Arithmetic in C,<br>Type Conversion in C</p>
+                <p class="the2kainfo">
+                    In C, integer promotions occur when smaller data types like `char` and `short` are automatically converted<br>
+                    to `int` or `unsigned int` for arithmetic operations. For example, multiplying two `char` values can yield <br>
+                    a result greater than what a `char` can hold, but the promotion prevents overflow. Character arithmetic uses<br> 
+                    ASCII values, allowing operations on characters. Type conversion, or casting, can be implicit (automatic by <br>
+                    the compiler) or explicit (user-defined). Implicit conversion promotes types to avoid data loss, while explicit <br>
+                    conversion allows specific type casting. Advantages include type safety, improved readability, and performance.<br>
+                    However, drawbacks include potential loss of precision, unexpected behavior, and increased code complexity. <br>
+                    Careful handling of conversions is essential to avoid issues like overflow or truncation.</p>        
+            </div>
+            <div id="section11" style="display: none;">
+                <p class="the2">Format Specifiers in C</p>
+                <p class="the2kainfo">
+                    In C, basic input and output are handled using the `stdio.h` library with `scanf()` and `printf()`,
+                    `scanf()`.<br>
+                    Reads input based on the format specifier and stores it in a variable.<br>
+                    Syntax:  <br>
+                    scanf("%X", &variable);<br>
+                    `printf()`<br>
+                    Prints the value of a variable.<br>
+                    Syntax:<br>
+                    printf("%X", variable);<br>
+                    # Basic Types:<br>
+                    - Integer:<br>  
+                      Input: `scanf("%d", &intVariable);`  <br>
+                      Output: `printf("%d", intVariable);`<br>
+                    
+                    - Float:  <br>
+                      Input: `scanf("%f", &floatVariable);` <br> 
+                      Output: `printf("%f", floatVariable);`<br>
+                    
+                    - Character: <br> 
+                      Input: `scanf(" %c", &charVariable);` <br> 
+                      Output: `printf("%c", charVariable);`<br>
+                    
+                    Example Program:<br>
+                    int main() {<br>
+                        int num;<br>
+                        char ch;<br>
+                        float f;<br>
+                        printf("Enter integer: ");<br>
+                        scanf("%d", &num);<br>
+                        printf("Integer: %d\n", num);<br>
+                        printf("Enter float: ");<br>
+                        scanf("%f", &f);<br>
+                        printf("Float: %f\n", f);<br>
+                        printf("Enter character: ");<br>
+                        scanf(" %c", &ch);<br>
+                        printf("Character: %c\n", ch);<br>
+                        return 0;<br>
+                    }<br>
+                     Strings:<br>
+                    Use `%s` for strings.<br>
+                    Input:<br>
+                    scanf("%s", stringVariable);<br>
+                    Output:<br>
+                    printf("%s", stringVariable);<br>
+                    String Example:<br>
+                    int main() {<br>
+                        char str[50];<br>
+                        printf("Enter word: ");<br>
+                        scanf("%s", str);<br>
+                        printf("Word: %s\n", str);<br>
+                        printf("Enter sentence: ");<br>
+                        scanf(" %[^\n]", str);<br>
+                        printf("Sentence: %s\n", str);<br>
+                        return 0;<br>
+                    }<br>
+                    This covers basic I/O operations for integers, floats, characters, and strings in C.<br>
+                    </p>        
+                
+    </div>
+
+    <div id="section12" style="display: none;"> 
+        <p class="the2"> Formatted I/O Functions</p>
+        <p class="the2kainfo"> Formatted I/O functions allow users to input and display data in a specified <br>
+            format using format specifiers. These functions can handle various data types, such as integers, <br>
+            floats, and strings. Common examples include:<br>
+            - `printf()`: Outputs formatted data to the console.<br>
+            - `scanf()`: Reads formatted input from the user.<br>
+            - `sprintf()`: Similar to `printf()`, but stores the output in a string.<br>
+            - `sscanf()`: Reads formatted input from a string.<br>
+            These functions utilize format specifiers (e.g., `%d`, `%f`, `%s`) to control the output format, <br>
+            making them user-friendly for various data types.<br>
+            </p> 
+    </div>
+
+    <div id="section13" style="display: none;">
+        <p class="the2"> Unformatted I/O Functions</p>
+        <p class="the2kainfo">In contrast, unformatted I/O functions only deal with character data and do not support <br>
+            format specifiers. They read single characters or strings without formatting options. Examples include:<br>
+            - `getch()`: Reads a character without displaying it.<br>
+            - `getche()`: Reads a character and displays it immediately.<br>
+            - `getchar()’: Reads a single character from the input.<br>
+            - `puts()`: Outputs a string but does not allow formatting.<br>
+            Comparison<br>
+            Formatted I/O functions are more versatile, supporting multiple data types and allowing custom formatting, while unformatted <br>
+            I/O functions are simpler, focusing solely on character input and output without any formatting capabilities.<br>
+            </p></div>
+    <div id="section14" style="display: none;">
+        <p class="the2"> Arrays</p>
+            <p class="the2kainfo">Arrays are a fundamental data structure in C programming, allowing for the storage of multiple values under<br> 
+                a single name in contiguous memory locations. They can hold primitive types (like `int`, `char`, and `float`) and even user-defined <br>
+                types, enabling efficient data management. Arrays are declared with a specific size at compile time, and their elements are accessed<br> 
+                using an index, which starts from zero.<br>
+                Initialization can occur at the time of declaration using an initializer list, or afterward using loops. While arrays offer fast access<br> 
+                to elements and facilitate operations like sorting and traversal, they come with limitations. They are static in size, meaning the number<br>
+                of elements is fixed upon declaration. This can lead to inefficient memory usage if the allocated space exceeds actual needs. Additionally,<br>
+                inserting or deleting elements can be cumbersome, as it may require rearranging the entire array.<br>
+                Despite these drawbacks, arrays remain integral to C programming, providing a straightforward and efficient way to handle collections of data.<br>
+                Understanding their properties, such as fixed size and contiguous storage, is crucial for leveraging their advantages while managing their<br>
+                limitations effectively.<br>
+                </p>
+    </div>
+    <div id="section15" style="display: none;">
+        <p class="the2"> Properties of Array in C:</p>
+        <p class="the2kainfo"> In C, an array is a fixed-size, homogeneous collection of elements stored in contiguous memory locations. Key properties of arrays<br> 
+            include:<br>
+            1. Fixed Size: Once declared, the size of an array cannot be changed. It must be known at compile time.<br>
+            2. Homogeneous Elements: All elements in an array must be of the same data type, ensuring type consistency.<br>
+            3. Indexing: Array indexing starts at 0, meaning the first element is accessed with index 0 and the last element with index (size - 1).<br>
+            4. Dimensions: Arrays can be one-dimensional or multidimensional (e.g., 2D, 3D), with the total number of elements determined by the product of the sizes <br>
+            of all dimensions.<br>
+            5. Contiguous Storage: Elements are stored in consecutive memory locations, which facilitates efficient access and manipulation.<br>
+            6. Random Access: Elements can be accessed directly using their indices, allowing for efficient retrieval.<br>
+            7. Pointer Relationship: The name of an array acts as a pointer to its first element, enabling pointer arithmetic.<br>
+            8. No Bound Checking: C does not perform automatic bounds checking, which can lead to errors if out-of-bounds access occurs.<br>
+            9. Array Decay: When passed to functions, arrays decay into pointers, losing their size information, which can affect memory management.<br>
+            </p></div>
+    <div id="section16" style="display: none;">
+        <p class="the2"> Pass Array to Functions in C:</p>
+        <p class="the2kainfo"> In C, when passing arrays to functions, the entire array cannot be passed directly. Instead, arrays decay into pointers,<br> 
+            meaning only the address of the first element is sent to the function. This leads to a loss of size information; thus, the size of the array <br>
+            cannot be determined within the called function. To handle this, it’s common to pass the size of the array as an additional parameter.<br>
+            For instance, using `sizeof(arr)` in the calling function provides the total size of the array, but in the callee, it only returns the size of<br> 
+            a pointer, which is typically 4 or 8 bytes, depending on the architecture. <br>
+            When dealing with character arrays (strings), C uses a null terminator (`'\0'`) to signify the end of the string, allowing functions to iterate <br>
+            through the elements without needing a separate size argument.<br> 
+            This behavior emphasizes the importance of managing array sizes explicitly when passing them to functions to avoid memory access issues and ensure <br>
+            correct operation. Understanding array decay and its implications is crucial for effective array handling in C programming.<br>
+            </p></div>
+
+    <div id="section17" style="display: none;">
+        <p class="the2"> C Pointers:</p>
+        <p class="the2kainfo">
+            Pointers are a fundamental aspect of C programming, allowing developers to store memory addresses of variables, functions, <br> 
+            or other pointers. This capability enables low-level memory access and dynamic memory allocation. A pointer is declared using the syntax<br>  
+            `data type *ptr`, where `ptr` is the pointer's name and `datatype` is the type it points to.<br> 
+            Pointers can be categorized into several types, including integer pointers, array pointers, structure pointers, function pointers, double <br> 
+            pointers, null pointers, void pointers, and constant pointers. The size of a pointer remains consistent across types, typically 4 bytes on <br> 
+            32-bit systems and 8 bytes on 64-bit systems, as all pointers store memory addresses.<br> 
+            Pointer arithmetic allows operations like incrementing or decrementing pointers to navigate through arrays, enhancing efficiency. However, <br> 
+            pointers come with risks: uninitialized pointers can lead to segmentation faults, and incorrect memory manipulation can cause data corruption. <br> 
+            While pointers offer powerful capabilities for managing memory and implementing complex data structures, their complexity requires careful handling<br> 
+            to prevent errors and memory leaks. Understanding and using pointers responsibly is crucial for effective C programming.<br> 
+            </p></div>
+        
+    <div id="section18" style="display: none;">
+        <p class="the2"> Passing Pointers to Functions in C:</p>
+        <p class="the2kainfo"> When we pass arguments without pointers the changes made by the function would be done to the local variables of the function.<br> 
+            Below is the C program to pass arguments to function without a pointer:// C program to swap two values
+            //  without passing pointer to <br> 
+            // swap function<br> 
+            void swap(int a, int b)<br> 
+            {<br> 
+              int temp = a;<br> 
+              a = b;<br> 
+              b = temp;<br> 
+            }  <br> 
+            // Driver code<br> 
+            int main() <br> 
+            {<br> 
+              int a = 10, b = 20;<br> 
+              swap(a, b);<br> 
+              printf("Values after swap function are: %d, %d",a, b);<br> 
+            return 0;<br> 
+            }<br> 
+            Output:<br> 
+            Values after swap function are: 10, 20<br> 
+            </p></div>
+    <div id="section19" style="display: none;">
+        <p class="the2">Arguments Passing with pointers:</p>
+        <p class="the2kainfo"> A pointer to a function is passed in this example. As an argument, a pointer is passed instead of a variable and its address is <br> 
+            passed instead of its value. As a result, any change made by the function using the pointer is permanently stored at the address of the passed variable. <br> 
+            In C, this is referred to as call by reference.<br> 
+            Below is the C program to pass arguments to function with pointers:<br> 
+            // C program to swap two values <br> 
+            // without passing pointer to <br> 
+            // swap function. <br> 
+            void swap(int* a, int* b) <br> 
+            { <br> 
+            int temp; <br> 
+            temp = *a; <br> 
+            *a = *b; <br> 
+            *b = temp; <br> 
+            } <br> 
+            // Driver code <br> 
+            int main() <br> 
+            { <br> 
+            int a = 10, b = 20; <br> 
+            printf("Values before swap function are: %d, %d\n", a, b); <br> 
+            swap(&a, &b); <br> 
+            printf("Values after swap function are: %d, %d", a, b); <br> 
+            return 0; <br> 
+            }<br> 
+            Output:<br>
+            Values before swap function are: 10, 20<br> 
+            Values after swap function are: 20, 10<br> 
+            Function pointers in C allow developers to store addresses of functions and invoke them dynamically, enhancing flexibility and code reuse. <br> 
+            For example, a function pointer can be declared as `void (*fun_ptr)(int)`, pointing to a function that takes an `int` parameter. This capability enables <br> 
+            patterns like callbacks, where functions can be passed as arguments.<br> 
+            </p></div>
+
+            <div id="section23" style="display: none;">
+                <p class="the2">Storage Classes in C</p>
+                <p class="the2kainfo">In C, storage classes define the scope, visibility, and lifetime of variables and functions, influencing how they are accessed and <br>
+                managed throughout a program's execution. There are four primary storage classes:<br>
+                1. auto: This is the default for variables defined within a function or block. `auto` variables exist only within their defined scope, which means they <br>
+                cannot be accessed outside of it. They are initialized with garbage values unless explicitly set.<br>
+                2. extern: This storage class indicates that a variable is defined outside the current scope, typically in another file or function. It allows global <br>
+                variables to be accessed across different files, facilitating modular programming.<br>
+                3. static: Static variables retain their value between function calls, maintaining their state even after the function exits. They are initialized only <br>
+                once, at the start of the program, and exist for the program's entire duration, while their scope remains local to the function.<br>
+                4. register: This class suggests that a variable be stored in a CPU register for faster access, rather than in memory. Like `auto`, `register` variables<br>
+                have block scope, but they cannot be accessed via pointers.<br>
+                Understanding these storage classes is crucial for effective memory management and optimizing program performance in C.<br>
+                </p></div>
+            <div id="section24" style="display: none;">
+                <p class="the2">Static Variables in C</p>
+                <p class="the2kainfo">Static variables in C are unique in that they retain their value between function calls and persist for the lifetime of the program. Declared<br> 
+                    using the syntax `static data_type var_name = var_value;`, they are initialized only once, at the start of the program, and exist in the data segment rather than <br>
+                    on the stack. This allows them to maintain their state, making them useful for tasks such as counting function calls.<br>
+                    For example, in a function where a static integer is incremented, it will preserve its value across multiple invocations, unlike a local auto variable, which resets<br> 
+                    with each call. If a static variable is not explicitly initialized, it defaults to zero, while local auto variables may hold garbage values.<br>
+                    Importantly, static variables can only be initialized with constant literals; attempting to initialize them with a non-constant expression will result in a compilation <br>
+                    error. Additionally, static variables and functions can be declared globally, limiting their scope to the file they are defined in. However, they cannot be declared <br>
+                    within structures due to the requirement for contiguous memory allocation for structure members.<br>
+                    These characteristics make static variables a powerful tool for managing state in C programming, enabling efficient memory usage and persistent data storage across <br>
+                    function calls.<br>
+                    In C, functions are global by default. The “static” keyword before a function name makes it static.<br>
+                    For example, the below function fun() is static.<br>
+                    Unlike global functions in C, access to static functions is restricted to the file where they are declared. Therefore, when we want to restrict access to functions, <br>
+                    we make them static. Another reason for making functions static can be the reuse of the same function name in other files.<br>
+                    For example, if we store the following program in one file file1.c<br>
+                    static void fun1(void) {<br>
+                      puts("fun1 called"); <br>
+                    }<br>
+                    And store the following program in another file file2.c<br>
+                    int main(void)<br>
+                    {<br>
+                      fun1(); <br>
+                      getchar();<br>
+                      return 0;  <br>
+                    }<br>
+                    </p></div>
+            <div id="section25" style="display: none;">
+                <p class="the2">Basics of File Handling in C</p>
+                <p class="the2kainfo">
+                    File handling in C allows programs to create, open, read, write, and close files. C provides functions like `fopen()`, `fwrite()`, `fread()`, `fseek()`, <br>
+                    and more to manage file operations.<br>
+                    Why Do We Need File Handling?<br>
+                    Without file handling, data created during program execution is lost once the program terminates. File handling allows:<br>
+                    - Reusability: Data can be stored and accessed later.<br>
+                    - Portability: Files can be easily transferred without data loss.<br>
+                    - Efficiency: Large data sets can be managed with minimal memory usage.<br>
+                    - Storage Capacity: Files can hold large amounts of data without overwhelming program memory.<br>
+                    Types of Files in C:<br>
+                    1. Text Files: Store data as ASCII characters and can be edited with any text editor (e.g., `.txt`).<br>
+                    2. Binary Files: Store data in binary format, not easily readable without a program (e.g., `.bin`).<br>
+                    C File Operations<br>
+                    Common operations include:<br>
+                    - Creating a file: `fopen()` with modes like `"w"` (write) or `"a"` (append).<br>
+                    - Opening a file: `fopen()`.<br>
+                    -Reading from a file: `fscanf()` or `fgets()`.<br>
+                    - Writing to a file: `fprintf()` or `fputs()`.<br>
+                    - Closing a file: `fclose()`.<br>
+                     File Pointer<br>
+                    A file pointer, declared as `FILE *pointer_name;`, refers to the current position in an open file. It is crucial for file operations.<br>
+                     Opening a File<br>
+                    To open a file, use `fopen()`:<br>
+                    FILE *fptr = fopen("filename.txt", "r");<br>
+                    if (fptr == NULL) {<br>
+                        printf("File cannot be opened.\n");<br>
+                    }<br>
+                    Reading and Writing Files<br>
+                    - Reading: Use `fscanf()` for formatted input or `fgets()` for line input.<br>
+                    - Writing: Use `fprintf()` for formatted output or `fputs()` for string output.<br>
+                    Closing a File<br>
+                    Always close files using `fclose(file_pointer);` to free resources.<br>
+                    Example Programs<br>
+                    1. Creating and Writing to a File:<br>
+                    int main() {<br>
+                        FILE *fptr = fopen("example.txt", "w");<br>
+                        if (fptr) {<br>
+                            fprintf(fptr, "Hello, World!\n");<br>
+                            fclose(fptr);<br>
+                        }<br>
+                        return 0;<br>
+                    }<br>
+                    2. Reading from a File:<br>
+                    int main() {<br>
+                        FILE *fptr = fopen("example.txt", "r");<br>
+                        char buffer[100];<br>
+                        if (fptr) {<br>
+                            while (fgets(buffer, sizeof(buffer), fptr)) {<br>
+                                printf("%s", buffer);<br>
+                            }<br>
+                            fclose(fptr);<br>
+                        }<br>
+                      return 0;<br>
+                    }<br>
+                    Advanced Functions<br>
+                    - `fseek()`: Moves the file pointer to a specified location.<br>
+                    - `rewind()`: Resets the file pointer to the beginning of the file.<br>
+                    - `ftell()`: Returns the current position of the file pointer.<br>
+                    </p></div>
+            <div id="section26" style="display: none;">
+                <p class="the2">EOF, getc(),feof(),fgets() and gets() in C language</p>
+                <p class="the2kainfo">
+                    The `fopen()` function in C is used to open a file for reading, writing, or appending. Its syntax is:<br>
+                    FILE *fopen(const char *file_name, const char *mode_of_operation);<br>
+                    The `file_name` parameter specifies the name of the file, while the `mode_of_operation` determines how the file is accessed. <br>
+                    Common modes include:<br>
+                    -`r`: Read mode; file must exist.<br>
+                    - `w`: Write mode; creates a new file or truncates an existing one.<br>
+                    - `a`: Append mode; writes data to the end of the file.<br>
+                    - `r+`, `w+`, `a+`: Read and write modes.<br>
+                    If the file opened successfully, `fopen()` returns a `FILE` pointer; otherwise, it returns `NULL`.<br>
+                    Example<br>
+                    To create and write to a file:<br>
+                    FILE *file = fopen("example.txt", "w+");<br>
+                    fprintf(file, "Hello, World!\n");<br>
+                    fclose(file);<br>
+                    To read from a file:<br>
+                    FILE *file = fopen("example.txt", "r");<br>
+                    int ch;<br>
+                    while ((ch = getc(file)) != EOF) {<br>
+                        putchar(ch);<br>
+                    }<br>
+                    fclose(file);<br>
+                    For safe string input, use `fgets()` instead of the unsafe `gets()`, which does not check for buffer overflows. Always handle file <br>
+                    operations with care to ensure robust code.<br>
+                    </p></div>
+
+            <div id="section27" style="display: none;">
+                <p class="the2">C program to delete a file</p>
+                <p class="the2kainfo">The remove() function in C/C++ can be used to delete a file. The function returns 0 if the file is deleted successfully, <br>
+                    Otherwise, it returns a non-zero value. The remove() is defined inside the stdio.h header file.<br>
+                    Syntax of remove()<br>
+                    remove("filename");<br>
+                    Parameters<br>
+                    This function takes a string as a parameter, which represents the name of the file to be deleted.<br>
+                    Return Value    <br>
+                    The function returns 0 if the file is deleted successfully, Otherwise, it returns a non-zero value. <br>
+                    Examples of remove()    <br>
+                    Example 1:  <br>
+                    The below C program demonstrates the use of remove() function.  <br>
+                    // C program that demonstrates  <br>
+                    // the use of remove() function <br>
+                    int main()  <br>
+                    {   <br>
+                        if (remove("abc.txt") == 0) <br>
+                            printf("Deleted successfully"); <br>
+                        else    <br>
+                            printf("Unable to delete the file");    <br>
+                    return 0;   <br>
+                    }   <br>
+                    Output  <br>
+                    If file deleted successfully    <br>
+                    Deleted successfully    <br>
+                                OR  <br>
+                    If file not deleted successfully<br>
+                    Unable to delete the file   <br>
+                    
+                    </p> </div>     
+        </main>
+    <div class="footer">
+        <img class="trust" src="imagesfrontpage/trust.png">
+        <p class="footerinfo">Department of Computer Engineering<br>
+        Guided by: Dr. Vijaya Sagvekar<br>
+        Developed by: Tanishq Chaudhari,Maharshi Jethva,Devesh Kichak
+        </p>
+        <img class="trust" src="imagesfrontpage/svv.png">
+    </div>
+<script src="change.js"></script>
+</body>
+</html>
